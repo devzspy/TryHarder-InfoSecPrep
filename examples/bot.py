@@ -37,6 +37,7 @@ startup_extensions = [
     "oswpexam",
     "deleted_msg",
     "edited_msg",
+    "lmgtfy",
 ]
 
 @bot.event

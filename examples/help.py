@@ -30,6 +30,7 @@ def userCmds():
     embed.add_field(name="?osweexam", value="Spits out the URL to OSWE Exam guide. Global command - works anywhere in server. ", inline=False)
     embed.add_field(name="?osceexam", value="Spits out the URL to OSCE Exam guide. Global command - works anywhere in server. ", inline=False)
     embed.add_field(name="?oswpexam", value="Spits out the URL to OSWP Exam guide. Global command - works anywhere in server. ", inline=False)
+    embed.add_field(name="?lmgtfy", value="Used for snarky response on how to search stuff. Global command - works anywhere in the server.", inline=False)
     return embed
 
 @commands.command()
