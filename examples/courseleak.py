@@ -4,9 +4,11 @@ from builtins import bot
 
 @commands.command()
 async def courseleak(ctx):
-    msg = "If you wish to report a leak of an offsec course, please DM either the Discord Staff and we can help you handle it, or the Offsec staff which have the Offensive Security Staff role."
+    userMsg = ctx.message.content()
+    channel = bot.get_channel('701897816498241626')
+    await channel.send("User Reported: " + userMsg)
     channel = ctx.channel
-    await channel.send(msg)
+    await channel.send("We've sent this to offsec staff")
 
 def setup(bot):
     bot.add_command(courseleak)
