@@ -38,6 +38,7 @@ startup_extensions = [
     "deleted_msg",
     "edited_msg",
     "lmgtfy",
+    "courseleak",
 ]
 
 @bot.event
