@@ -10,7 +10,7 @@ description = '''An example bot to showcase the discord.ext.commands extension
 module.
 
 There are a number of utility commands being showcased here.'''
-bot = commands.Bot(command_prefix='?', description=description)
+bot = commands.Bot(command_prefix=('?', '!'), description=description)
 bot.remove_command('help')
 
 builtins.bot = bot
@@ -39,6 +39,7 @@ startup_extensions = [
     "edited_msg",
     "lmgtfy",
     "courseleak",
+    "lpeworkshop",
 ]
 
 @bot.event
