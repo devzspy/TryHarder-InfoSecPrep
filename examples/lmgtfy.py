@@ -8,6 +8,7 @@ async def lmgtfy(ctx):
     channel = ctx.channel
     userSearch = ctx.message.content.split(" ")
     search = "+".join(userSearch[1:])
+    search = search.replace("@", "")
     msg = template + search
     await channel.send(msg)
 
