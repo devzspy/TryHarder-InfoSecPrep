@@ -35,11 +35,14 @@ startup_extensions = [
     "osweexam",
     "osceexam",
     "oswpexam",
+    "osepexam",
+    "oseeexam",
     "deleted_msg",
     "edited_msg",
     "lmgtfy",
-    "courseleak",
     "lpeworkshop",
+    #"oscp-flag",
+    "booster",
 ]
 
 @bot.event

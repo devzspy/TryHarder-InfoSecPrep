@@ -5,7 +5,7 @@ from builtins import bot
 @commands.command()
 async def osceexam(ctx):
     channel = ctx.channel
-    msg = "https://support.offensive-security.com/osce-exam-guide/"
+    msg = "https://help.offensive-security.com/hc/en-us/articles/360046801331-OSCE-Exam-Guide"
     await channel.send(msg)
 
 def setup(bot):

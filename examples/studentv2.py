@@ -39,7 +39,7 @@ async def on_raw_reaction_add(payload):
     channel = bot.get_channel(payload.channel_id)
     reaction = payload.emoji.name
     if studentChannel == channel:
-        if reaction == "oscp" or reaction == "oswp" or reaction == "oswe" or reaction == "osce" or reaction == "wapt":
+        if reaction == "oscp" or reaction == "oswp" or reaction == "oswe" or reaction == "osce" or reaction == "osep" or reaction == "wapt":
             role = discord.utils.get(server.roles, name="%s Student" % reaction.upper())
             roleMention = role.mention
             await member.add_roles(role)
@@ -55,7 +55,7 @@ async def on_raw_reaction_remove(payload):
     channel = bot.get_channel(payload.channel_id)
     reaction = payload.emoji.name
     if studentChannel == channel:
-        if reaction == "oscp" or reaction == "oswp" or reaction == "oswe" or reaction == "osce" or reaction == "wapt":
+        if reaction == "oscp" or reaction == "oswp" or reaction == "oswe" or reaction == "osce" or reaction == "osep" or reaction == "wapt":
             role = discord.utils.get(server.roles, name="%s Student" % reaction.upper())
             roleMention = role.mention
             await member.remove_roles(role) 
