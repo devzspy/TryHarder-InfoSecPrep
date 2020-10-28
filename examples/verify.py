@@ -33,7 +33,7 @@ async def verify(ctx, member: discord.Member):
             await channel.send("%s has been verified. Revoked: %s role | Added: %s" % (userMention, studentMention, verifyMention))
             await oscp_certified_channel.send("Welcome %s\n\nDiscussion of exam hosts is forbidden." % (userMention))
 
-         elif channel == osep_verify_channel:
+        elif channel == osep_verify_channel:
             studentRole = discord.utils.get(server.roles, name="OSEP Student")
             studentMention = studentRole.mention
             verifyRole = discord.utils.get(server.roles, name="OSEP Certified")
