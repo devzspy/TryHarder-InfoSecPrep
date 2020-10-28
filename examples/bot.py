@@ -6,11 +6,13 @@ import asyncio
 from datetime import datetime,time
 import pkg_resources
 
+intents = discord.Intents.default() #Change this to have whatever intents you wish
+
 description = '''An example bot to showcase the discord.ext.commands extension
 module.
 
 There are a number of utility commands being showcased here.'''
-bot = commands.Bot(command_prefix=('?', '!'), description=description)
+bot = commands.Bot(command_prefix=('?', '!'), description=description, intents=intents)
 bot.remove_command('help')
 
 builtins.bot = bot
