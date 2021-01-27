@@ -45,6 +45,8 @@ startup_extensions = [
     "lpeworkshop",
     #"oscp-flag",
     "booster",
+    'kalirevealed',
+    'offsecpaste'
 ]
 
 @bot.event
