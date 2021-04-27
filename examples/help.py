@@ -15,6 +15,7 @@ def adminCmds():
     embed.add_field(name="?joined [@<username>]", value="Will output when the user joined the server. Must be executed in <#630675224383455254>. Different from user ?joined. See user notes.", inline=False)
     embed.add_field(name="?verify [@<username>]", value="Use command in verification channels only. Will revoke student role and grant certified role. Roles determined based on verification channel.", inline=False)
     embed.add_field(name="?echo [#channel] [msg]", value="Makes the bot send a message to specified channel. Must be executed in <#630675224383455254>.", inline=False)
+    embed.add_field(name="?multipin [#channel] [#channel] [#channel] ... [msg]", value="Makes the bot pin a message to specified channels. Must be executed in <#630675224383455254>.", inline=False)
     return embed
 
 def userCmds():
